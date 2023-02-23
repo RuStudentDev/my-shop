@@ -1,5 +1,8 @@
 import { proxy } from "valtio";
 
+/**
+ * @description Интерфейс объекта товара
+ */
 export interface IStoreItem {
   id: string;
   name: string;
@@ -7,6 +10,9 @@ export interface IStoreItem {
   count: number;
 }
 
+/**
+ * @description Прокси состояние с товарами сайта
+ */
 export const store = proxy<IStoreItem[]>([
   {
     id: '0',

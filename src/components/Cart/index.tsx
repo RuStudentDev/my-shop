@@ -5,6 +5,9 @@ import { useSnapshot } from "valtio";
 
 import s from "./Cart.module.sass";
 
+/**
+ * @description Компонент корзины (списка покупок)
+ */
 export const Cart = () => {
   useSnapshot(store);
   useSnapshot(cart);

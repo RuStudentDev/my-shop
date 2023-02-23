@@ -5,6 +5,9 @@ import { useSnapshot } from "valtio";
 
 import s from "./Item.module.sass";
 
+/**
+ * @description Компонент одного товара товаров
+ */
 export const Item: FC<{ item: IStoreItem; }> = ({ item }) => {
   useSnapshot(item);
 

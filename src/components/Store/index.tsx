@@ -6,6 +6,9 @@ import { useSnapshot } from "valtio";
 
 import s from "./Store.module.sass";
 
+/**
+ * @description Компонент списка товаров
+ */
 export const Store = () => {
   const [state, setState] = useState('');
   useSnapshot(store);

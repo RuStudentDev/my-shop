@@ -5,6 +5,9 @@ import { useSnapshot } from "valtio";
 
 import s from "./CartControll.module.sass";
 
+/**
+ * @description Компонент управление товаром в корзине
+ */
 export const CartControl: FC<{ item: IStoreItem; }> = ({ item }) => {
   useSnapshot(item);
   useSnapshot(cart);
